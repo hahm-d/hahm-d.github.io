@@ -17,12 +17,16 @@ function submitForm(e) {
 
 function sendEmail(name, email, message) {
     Email.send({
-        SecureToken: "adc113ed-c213-4d68-9b60-76ecdb3f3440",
+        SecureToken: "f5a1f778-59a4-4eb5-a9a9-7fa1692e97e5",
         To : "dhahm01@gmail.com",
         From : email,
         Subject : `${name} reaching out via website`,
         Body : message
-    }).then(
-        message => alert("mail sent successfully")
-    );
+    }).then(function(response){
+        if(response == 'OK'){
+            message => alert("mail sent successfully")  
+        }else{
+            throw new Error('ERROR: ' + response)
+        }
+    })
 }
