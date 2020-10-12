@@ -134,16 +134,16 @@
 							<h2>Get in touch</h2>
 						</header>
 						<div class="content">
-							<form action="" method="post" role="form" class="contactForm">
+							<form method="POST" role="form" class="contactForm">
 								<div class="fields">
 									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" class="name" placeholder="Name" />
 									</div>
 									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
+										<input type="email" name="email" class="email" placeholder="Email" />
 									</div>
 									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+										<textarea name="message" class="message" placeholder="Message" rows="7"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
@@ -175,10 +175,9 @@
 
 			</div>
 
-		<!-- Contact Form JavaScript File -->
-		<script src="contactform/contactform.js"></script>
-
 		<!-- Scripts -->
+			<script src="index.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
