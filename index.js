@@ -17,7 +17,7 @@ function submitForm(e) {
 
 function sendEmail(name, email, message) {
     Email.send({
-        SecureToken: "7437d1c4-86f9-4bf4-bc39-d70e6a07cf93",
+        SecureToken: "796825c1-0203-4e8f-a429-4274cee7cebc",
         To : "dhahm01@gmail.com",
         From : email,
         Subject : `${name} reaching out via website`,
